@@ -1,0 +1,10 @@
+//Remove Permalink of Custom Code Snippets
+add_action('admin_head', 'wpds_custom_admin_post_css');
+function wpds_custom_admin_post_css() {
+
+    global $post_type;
+
+    if ($post_type == 'post_type') {
+        echo "<style>#edit-slug-box {display:none;}</style>";
+    }
+}
