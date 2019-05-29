@@ -1,0 +1,7 @@
+//Delete permalink under WordPress post title
+add_filter( 'get_sample_permalink_html', 'wpse_125800_sample_permalink' );
+function wpse_125800_sample_permalink( $return ) {
+    $return = '';
+
+    return $return;
+}
